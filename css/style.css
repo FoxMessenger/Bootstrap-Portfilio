@@ -55,10 +55,21 @@ body {
   float: right;
 
   /* Visual */
-  background: #eee;
+  background: white;
 
   /* Typography */
   text-align: center;
+}
+
+.contact-icons {
+  width: 40px;
+  height: 40px;
+}
+
+#bio-image {
+  margin-bottom: 50px;
+  width: 200px;
+  height: 200px;
 }
 
 /* 
@@ -70,7 +81,7 @@ body {
   /* The body's bg color will be #333 */
   body { background-color: #333; }
 
-  nav { display: none; }
+  .navbar-right { display: none; }
 
   #sidebar { margin: auto; margin-left: auto; float: left; margin-top: 50px; background-color: white;}
   /* The wrapper's width will be 600px */

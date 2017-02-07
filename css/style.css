@@ -16,19 +16,12 @@ body {
 
 }
 
-/* 
-  The width of the wrapper will be 1024px
-  at browser widths above 768px 
-*/
-.wrapper {
-
-  /* Positioning */
-  margin: 40px auto;
-
-  /* Box-model */
-  width: 1024px;
-
+h1 {
+  font-size: 20px;
 }
+
+
+/* -- IDs -- */
 
 #main-content,
 #sidebar {
@@ -59,32 +52,101 @@ body {
 
   /* Typography */
   text-align: center;
-}
-
-.contact-icons {
-  width: 40px;
-  height: 40px;
+  margin-bottom: 20px;  
 }
 
 #bio-image {
+
+  /* Visual */
   margin-bottom: 50px;
   width: 200px;
   height: 200px;
 }
 
+#footer-bar {
+  width: 40px; 
+  height: 40px;
+  padding: 5px;
+}
+
+/* -- DIVs -- */
+
+/* 
+  The width of the wrapper will be 1024px
+  at browser widths above 768px 
+*/
+.wrapper {
+
+  /* Positioning */
+  margin: 40px auto;
+
+  /* Box-model */
+  width: 1024px;
+
+}
+
+/* -- PORTFOLIO -- */
+
+.divImages {
+    /*background-color: tomato;*/
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+
+.divText {
+  color: white;
+  background-color: #4aaaa5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 210px;
+  width: 300px;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px
+}
+
+/* -- PORTFOLIO END - */
+
+.contact-icons {
+
+  /* Visual */
+  width: 40px;
+  height: 40px;
+}
+
+
+
+footer {
+  color: white;
+  /*font-size: 10px;*/
+  background-color: #666666;
+  text-align: center;
+  clear: both;
+  /*width: 100%;*/
+  /*padding: 10px;*/
+  border-style: solid;
+  border-color: tomato;
+}
+
+
 /* 
   These rules take effect when the browser's width
   is either 768px or less.
 */
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
 
-  /* The body's bg color will be #333 */
-  body { background-color: #333; }
+    /* The body's bg color will be #333 */
+    body { background-color: #333; }
 
-  .navbar-right { display: none; }
+    .navbar-right { display: none; }
 
-  #sidebar { margin: auto; margin-left: auto; float: left; margin-top: 50px; background-color: white;}
-  /* The wrapper's width will be 600px */
-  .wrapper { width: 500px; }
-  
-}
+    #sidebar { margin: auto; margin-left: auto; float: left; margin-top: 50px; background-color: white;}
+    /* The wrapper's width will be 600px */
+    .wrapper { width: 500px; }
+    
+  }
